@@ -86,7 +86,7 @@ const SkillsComponent: React.FC = () => {
 
     return (
         <>
-            <h2 className="md:mb-12 mt-4 mb-8 text-4xl font-bold text-center text-white">
+            <h2 id='stacks' className="md:mb-12 mt-4 mb-8 text-4xl font-bold text-center text-white">
                 My Stacks
             </h2>
             <div ref={scope} className="rounded-xl dark:border-gray-800 md:gap-4 md:p-4 flex flex-wrap w-full gap-1 p-2 border">

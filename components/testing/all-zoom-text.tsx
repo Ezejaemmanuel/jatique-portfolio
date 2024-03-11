@@ -8,7 +8,7 @@ import { SectionFour } from './zooming-text-4';
 
 export const MainZoomText = () => {
     return (
-        <div>
+        <div id='jatique'>
             <SectionOne />
             <SectionTwo />
             <SectionThree />

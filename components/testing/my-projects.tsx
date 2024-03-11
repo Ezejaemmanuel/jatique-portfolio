@@ -34,7 +34,7 @@ export default function MyProjects() {
 
     })
     return (
-        <main className="md:mt-[50vh] md:mb-[50vh]  mb-[10vh]" ref={container} >
+        <main id='projects' className="md:mt-[50vh] md:mb-[50vh]  mb-[10vh]" ref={container} >
             <h2 className="md:mb-12 mt-4 mb-8 text-4xl font-bold text-center text-white">
                 My Projects
             </h2>

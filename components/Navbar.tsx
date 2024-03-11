@@ -11,8 +11,20 @@ const navLinks = [
     path: "#about",
   },
   {
+    title: "Stacks",
+    path: "#stacks"
+  },
+  {
     title: "Projects",
     path: "#projects",
+  },
+  {
+    title: "Jatique",
+    path: "#jatique",
+  },
+  {
+    title: "Reviews",
+    path: "#reviews",
   },
   {
     title: "Contact",
