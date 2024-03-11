@@ -127,12 +127,12 @@ const Images = ({ imgIndex }: { imgIndex: number }) => {
                     >
                         <div key={review.id} className={`flex flex-col ${idx % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} rounded-lg shadow-lg justify-center  items-center overflow-hidden`} >
                             <div className="md:w-1/2 container space-y-4">
-                                <p className="inline-block text-6xl">“</p>
-                                <p className="text-3xl leading-relaxed">{review.text}</p>
-                                <p className="text-6xl">”</p>
+                                <p className="inline-block text-3xl md:text-6xl">“</p>
+                                <p className=" text-lg  md:text-3xl leading-relaxed">{review.text}</p>
+                                <p className=" text-3xl md:text-6xl">”</p>
 
-                                <p className="text-xl font-bold">{review.author}</p>
-                                <p className="text-xl uppercase">{review.role}</p>
+                                <p className="md:text-xl text-md  font-bold">{review.author}</p>
+                                <p className="md:text-xl text-md uppercase">{review.role}</p>
                             </div>
                             <div className="md:w-1/2">
                                 <Image
