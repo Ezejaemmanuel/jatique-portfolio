@@ -265,28 +265,20 @@ export const HorizontalScrollCarousel = () => {
             <div className="sticky top-0 flex items-center h-screen overflow-hidden">
                 <motion.div style={{ x }} className="flex gap-4">
                     {cardsData.map(({ title, description, icon: Icon, icons }, index) => (
-                        <div key={index} className="w-full max-w-[350px] transition-all duration-1000 hover:scale-105">
+                        <div key={index} className="w-full max-w-[350px]  transition-all duration-1000 hover:scale-105">
                             <div className="group relative grid overflow-hidden rounded-xl px-4 py-5 shadow-[0_1000px_0_0_hsl(0_0%_20%)_inset] transition-colors duration-200">
                                 <span>
                                     <span className="spark mask-gradient animate-flip before:animate-rotate absolute inset-0 h-[100%] w-[100%] overflow-hidden rounded-xl [mask:linear-gradient(white,_transparent_50%)] before:absolute before:aspect-square before:w-[200%] before:rotate-[-90deg] before:bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] before:content-[''] before:[inset:0_auto_auto_50%] before:[translate:-50%_-15%]" />
                                 </span>
                                 <span className="backdrop absolute inset-px rounded-[11px] bg-neutral-950 transition-colors duration-200" />
-                                <Card className=" z-10 text-slate-300 w-[350px]  rounded-lg">
+                                <Card className=" z-10 text-slate-300 w-[350px] h-[350px]  rounded-lg">
                                     <CardHeader className="flex flex-col items-center justify-center">
                                         <Icon className="text-[#db6060] md:h-16 md:w-16 h-12 w-12" />
                                         <CardTitle className="text-md md:text-xl mt-4 mb-2 font-semibold">{title}</CardTitle>
                                     </CardHeader>
                                     <CardContent>
                                         <p className=" md:text-sm text-xs text-center">{description}</p>
-                                        {icons && (
-                                            <div className="flex flex-wrap justify-center gap-1 mt-4">
-                                                {icons.map((IconComponent, index) => (
-                                                    <div className="ring-2 ring-yellow-300 rounded-full" key={index}>
-                                                        <IconComponent className="text-[#39d496] md:h-6 rounded-full  md:w-6 h-4 w-4 m-1" />
-                                                    </div>
-                                                ))}
-                                            </div>
-                                        )}
+
                                     </CardContent>
                                 </Card>
                             </div>
